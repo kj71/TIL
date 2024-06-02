@@ -12,15 +12,18 @@ Below is a sample config structure.
       transform: {
         // official doc regarding this not found as of now
         experimentalImportSupport: false,
-        // checks for inline requires. (However, may not work as expected.[Check this](https://github.com/facebook/metro/issues/909))
+        // checks for inline requires. However, may not work as expected.
+        // Check this: https://github.com/facebook/metro/issues/909
         inlineRequires: true,
       },
     }),
   },
   resolver: {
-    // to include the asset extensions that are to be referenced my the Metro. By default, Metro has a list of widely used asset extensions that it references (eg: png, jpeg, pdf, mp3, mp4).
+    // to include the asset extensions that are to be referenced my the Metro.
+    //By default, Metro has a list of widely used asset extensions that it references (eg: png, jpeg, pdf, mp3, mp4).
     assetExts: [],
-    // to include the source code file extensions that are to be referenced my the Metro. By default, Metro references files like ts, tsx, js, jsx etc in some order.
+    // to include the source code file extensions that are to be referenced my the Metro.
+    // By default, Metro references files like ts, tsx, js, jsx, json in some order.
     sourceExts: [],
   },
   // for the source code folders that may not be located in the root project.
